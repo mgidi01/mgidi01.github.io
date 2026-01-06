@@ -1,17 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>My Website</title>
-   <link rel="stylesheet" href="./style.css">
-   <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mauricio Gidi | Pipeline TD / Tools Engineer</title>
+  <meta name="description" content="Pipeline TD / Tools Engineer focused on Nuke + Python tools for compositing pipelines." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
-   <main>
-       <h1>Welcome to My Website</h1>
-   </main>
-   <script src="index.js"></script>
+
+<header class="container">
+  <nav class="nav" aria-label="Primary">
+    <div class="brand">
+      <div class="badge">MG</div>
+      <div>
+        <div style="font-weight:700;">Mauricio Gidi</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:-2px;">
+          Pipeline TD / Tools Engineer · Nuke + Python
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="/" class="active" aria-current="page">Home</a>
+      <a href="/projects/">Projects</a>
+      <a href="/about/">About</a>
+      <a href="/resume/">Resume</a>
+      <a href="/contact/">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Building reliable, artist-friendly tools for compositing pipelines.</h1>
+    <p>
+      Portfolio hub. Step 5 complete (shared navigation). Content will be expanded in later steps.
+    </p>
+
+    <div class="btnrow">
+      <a class="btn primary" href="/projects/">View Projects</a>
+      <a class="btn" href="/resume/">Resume</a>
+      <a class="btn" href="https://github.com/mgidi01">GitHub</a>
+      <!-- Replace with your real LinkedIn when ready -->
+      <a class="btn" href="#">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>© <span id="y"></span> Mauricio Gidi</div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <!-- Replace with your real email -->
+      <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
+      <a href="https://github.com/mgidi01">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+</header>
+
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
