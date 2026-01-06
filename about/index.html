@@ -3,58 +3,229 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About | Mauricio Gidi</title>
-  <meta name="description" content="About Mauricio Gidi: Pipeline TD / Tools Engineer (Nuke + Python)." />
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-</head>
-<body>
 
-<header class="container">
-  <nav class="nav" aria-label="Primary">
-    <div class="brand">
-      <div class="badge">MG</div>
-      <div>
-        <div style="font-weight:700;">Mauricio Gidi</div>
-        <div style="font-size:13px;color:var(--muted);margin-top:-2px;">
-          Pipeline TD / Tools Engineer · Nuke + Python
+  <title>About | Mauricio Gidi</title>
+  <meta name="description" content="Compositor-to-TD building Nuke + Python tools: PySide UIs, pipeline automation, publishing/versioning, and artist-friendly workflow fixes." />
+  <meta name="author" content="Mauricio Gidi" />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <link rel="canonical" href="https://mgidi01.github.io/about/" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:title" content="About | Mauricio Gidi" />
+  <meta property="og:description" content="Compositor-to-TD building Nuke + Python tools: PySide UIs, pipeline automation, publishing/versioning, and artist-friendly workflow fixes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mgidi01.github.io/about/" />
+  <!-- Add later when you have an image -->
+  <!-- <meta property="og:image" content="https://mgidi01.github.io/assets/img/og-about.png" /> -->
+
+  <meta name="twitter:card" content="summary" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="container">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">
+        <div class="badge">MG</div>
+        <div>
+          <div style="font-weight:700;">Mauricio Gidi</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:-2px;">
+            Compositing Pipeline TD / Tools Engineer · Nuke + Python
+          </div>
         </div>
       </div>
-    </div>
 
-    <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <a href="/">Home</a>
-      <a href="/projects/">Projects</a>
-      <a href="/about/" class="active" aria-current="page">About</a>
-      <a href="/resume/">Resume</a>
-      <a href="/contact/">Contact</a>
-    </div>
-  </nav>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="/">Home</a>
+        <a href="/projects/">Projects</a>
+        <a href="/about/" class="active" aria-current="page">About</a>
+        <a href="/resume/">Resume</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <main class="hero">
-    <h1>About</h1>
-    <p>
-      Placeholder bio. In later steps, replace this with: background, strengths, tools,
-      and what roles you’re targeting (EU + remote/contract).
-    </p>
+  <!-- CONTENT -->
+  <main class="container">
+    <section class="hero">
+      <h1>About</h1>
+      <p>
+        I’m a compositor-to-TD building Nuke tools, PySide UIs, and pipeline-friendly workflows.
+        I build and maintain compositing pipeline tooling (automation, gizmos, workflow fixes) while
+        supporting artists and collaborating with pipeline/production to keep shots moving.
+      </p>
 
-    <h2>Focus</h2>
-    <div class="kickers">
-      <span class="tag">Nuke tool development</span>
-      <span class="tag">Python automation</span>
-      <span class="tag">Pipeline-friendly UX</span>
-    </div>
+      <div class="kickers">
+        <span class="tag">Pipeline automation</span>
+        <span class="tag">Publishing / versioning</span>
+        <span class="tag">UI tools (PySide2)</span>
+        <span class="tag">ShotGrid / ACES-aware</span>
+        <span class="tag">Artist support mindset</span>
+      </div>
+
+      <div class="btnrow">
+        <a class="btn primary" href="/projects/">View Projects</a>
+        <a class="btn" href="/resume/">Resume</a>
+        <a class="btn" href="mailto:mgidi0098@gmail.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>What I build</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Pipeline automation</h3>
+          <p>
+            Reduce repetitive shot work with safe defaults, deterministic behavior, and clear failure modes.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Publishing &amp; versioning</h3>
+          <p>
+            Consistent naming, shot/version discipline, and workflows that prevent “it worked on my script.”
+          </p>
+        </article>
+        <article class="card">
+          <h3>UI tools for artists</h3>
+          <p>
+            PySide-driven UX that minimizes clicks, avoids ambiguity, and stays responsive under deadline pressure.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Pipeline-friendly integration</h3>
+          <p>
+            Tooling designed for shared deployment (NUKE_PATH patterns), documentation, and maintainability.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Recent tools (high-level)</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Fast Preview Toggle (Nuke)</h3>
+          <p>
+            One hotkey to disable/enable “heavy” processing nodes (e.g., Kronos, OFlow, Denoise, ZDefocus),
+            reducing manual toggles from N actions to 1 per preview cycle (e.g., 30 heavy nodes → 29 fewer edits).
+          </p>
+          <div class="kickers">
+            <span class="tag">Nuke</span>
+            <span class="tag">Python</span>
+            <span class="tag">Workflow speed</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Studio Toolsets Library (in progress)</h3>
+          <p>
+            Studio-deployable toolsets browser + insertion workflow for standardized node setups (shared + personal roots),
+            designed for NUKE_PATH deployment and reliability hardening (skip malformed toolsets, deterministic sorting).
+          </p>
+          <div class="kickers">
+            <span class="tag">Nuke</span>
+            <span class="tag">Python</span>
+            <span class="tag">Shared deployment</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience &amp; training</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Compositing (production + freelance)</h3>
+          <p style="margin:0;">
+            Production and freelance compositing across film and TV, including roto/paint, clean-up, integrations,
+            and shot delivery under schedule pressure.
+          </p>
+          <p style="margin:10px 0 0;">
+            Notable: handled 50 indie-film shots solo after team drop-off; compositing for a Warner Bros. Discovery TV show.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Education</h3>
+          <p style="margin:0;">
+            Harvard Extension School — Computer Science master’s program (in progress).<br />
+            Vancouver Film School — Diploma in Compositing (Honours).<br />
+            Monterrey Institute of Technology — BA (Honours).
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tools &amp; tech</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Pipeline / DCC</h3>
+          <p style="margin:0;">
+            NukeX · ShotGrid (Flow Production Tracking) · ACES/linear workflow · Maya · Arnold · Mocha Pro
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Programming</h3>
+          <p style="margin:0;">
+            Python · Java · PySide2 · Git/GitHub · pip · VS Code · bash/PowerShell
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Workflow strengths</h3>
+          <p style="margin:0;">
+            Shot/versioning discipline · naming conventions · matchmove/tracking fundamentals · render/wedge management
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Languages</h3>
+          <p style="margin:0;">
+            Spanish (native) · English (C1 / IELTS 7.5)
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>What I’m seeking</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Now</h3>
+          <p style="margin:0;">
+            Remote / contract roles (Canada/US/UK/Ireland/Spain) while I finalize EU passport eligibility.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Soon</h3>
+          <p style="margin:0;">
+            In-person roles in Ireland and Spain once EU passport is secured (target: mid/end 2026).
+          </p>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div>© <span id="y"></span> Mauricio Gidi</div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a>
-      <a href="https://github.com/mgidi01">GitHub</a>
-      <a href="#">LinkedIn</a>
+  <!-- FOOTER -->
+  <footer class="container">
+    <div class="footer">
+      <div>© <span id="y"></span> Mauricio Gidi</div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="mailto:mgidi0098@gmail.com">mgidi0098@gmail.com</a>
+        <a href="https://github.com/mgidi01">GitHub</a>
+        <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
+      </div>
     </div>
   </footer>
-</header>
 
-<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
