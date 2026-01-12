@@ -12,7 +12,6 @@
   <link rel="canonical" href="https://mauricio-gidi.github.io/" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 
-  <!-- Optional (add favicon.ico later at repo root) -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
   <!-- Open Graph (social sharing) -->
@@ -57,7 +56,7 @@
       <h1>Building reliable, artist-friendly tools for compositing pipelines.</h1>
       <p>
         I design and ship Nuke + Python tools that reduce friction in daily shots work:
-        consistent publishes, faster iteration, clear UI, and pipeline-safe automation.
+        faster iteration, clear UI, and pipeline-safe automation.
       </p>
 
       <div class="kickers">
@@ -68,36 +67,75 @@
         <span class="tag">Remote / Contract-friendly</span>
       </div>
 
+      <!-- Make shipped tool unavoidable: primary CTAs point directly to it -->
       <div class="btnrow">
-        <a class="btn primary" href="/projects/">View Projects</a>
+        <a class="btn primary" href="/projects/#heavy-node-optimizer">Heavy Node Optimizer (Shipped)</a>
+        <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer#demo">Demo</a>
+        <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer/blob/main/docs/case-study-heavy-node-optimizer.md">Case Study</a>
+        <a class="btn" href="/projects/">All Projects</a>
         <a class="btn" href="/resume/">Resume</a>
-        <a class="btn" href="https://github.com/mauricio-gidi">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
       </div>
     </section>
 
     <section>
-      <h2>Featured work (scaffold)</h2>
+      <h2>Featured tools</h2>
       <div class="grid">
+        <!-- FEATURED 1 (SHIPPED) -->
         <article class="card">
-          <h3>Nuke Tool #1 — (Name TBD)</h3>
-          <p>Automation + consistency: reduce setup time and standardize outputs.</p>
+          <h3>Nuke Heavy Node Optimizer (Shipped)</h3>
+          <p>
+            One action to toggle “heavy” node classes across a script for faster iteration.
+            Safe by design (only touches each node’s <code>disable</code> knob), configurable via presets,
+            and suitable for shared studio deployment.
+          </p>
+
           <div class="kickers">
-            <span class="tag">Nuke</span><span class="tag">Python</span><span class="tag">Status: Shipped</span>
+            <span class="tag">Nuke</span>
+            <span class="tag">Python</span>
+            <span class="tag">PySide2/6</span>
+            <span class="tag">Status: Shipped</span>
           </div>
+
+          <ul style="margin:12px 0 0; padding-left:18px; color:var(--muted);">
+            <li>Turns N manual toggles into 1 action (per preview cycle).</li>
+            <li>Configurable “heavy” class list + presets (JSON-backed).</li>
+            <li>Cross-version UI compatibility via Qt shim (PySide2 + PySide6).</li>
+          </ul>
+
           <div class="btnrow">
-            <a class="btn" href="/projects/">View on Projects</a>
+            <a class="btn primary" href="/projects/#heavy-node-optimizer">View on Projects</a>
+            <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer#demo">Demo</a>
+            <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer/blob/main/docs/case-study-heavy-node-optimizer.md">Case Study</a>
+            <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer">GitHub</a>
           </div>
         </article>
 
+        <!-- FEATURED 2 (IN PROGRESS) -->
         <article class="card">
-          <h3>Nuke Tool #2 — (In progress)</h3>
-          <p>In-development tool focused on pipeline integration and clean artist UX.</p>
+          <h3>Nuke Toolsets Library (In progress)</h3>
+          <p>
+            A studio-deployable toolsets browser + insertion workflow for standardized node setups
+            (shared + personal roots). Designed for NUKE_PATH deployment and reliability hardening.
+          </p>
+
           <div class="kickers">
-            <span class="tag">Nuke</span><span class="tag">Python</span><span class="tag">Status: In progress</span>
+            <span class="tag">Nuke</span>
+            <span class="tag">Python</span>
+            <span class="tag">PySide2/6</span>
+            <span class="tag">Status: In progress</span>
           </div>
+
+          <ul style="margin:12px 0 0; padding-left:18px; color:var(--muted);">
+            <li>Browse + filter toolsets with metadata (clean artist UX).</li>
+            <li>Deterministic behavior (sorting, safe loading, error handling).</li>
+            <li>Tracked v0.1 scope + issues roadmap.</li>
+          </ul>
+
           <div class="btnrow">
-            <a class="btn" href="/projects/">View on Projects</a>
+            <a class="btn primary" href="/projects/#nuke-toolsets">View on Projects</a>
+            <a class="btn" href="https://github.com/mauricio-gidi/nuke-toolsets">GitHub</a>
+            <a class="btn" href="https://github.com/mauricio-gidi/nuke-toolsets/issues">Issues</a>
+            <a class="btn" href="https://github.com/mauricio-gidi/nuke-toolsets#v01-scope--milestone-plan">v0.1 Scope</a>
           </div>
         </article>
       </div>
