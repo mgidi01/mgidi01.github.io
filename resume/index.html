@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Resume | Mauricio Gidi</title>
-  <meta name="description" content="Resume for Mauricio Gidi — Compositing Pipeline TD / Tools Engineer (Nuke + Python). Download PDF + quick highlights." />
+  <meta name="description" content="Pipeline TD / Nuke Tools Engineer resume (PDF) + highlights." />
   <meta name="author" content="Mauricio Gidi" />
   <meta name="theme-color" content="#0b0f14" />
 
@@ -13,12 +13,11 @@
   <link rel="stylesheet" href="/assets/css/styles.css" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-  <!-- Open Graph (social sharing) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Resume | Mauricio Gidi" />
-  <meta property="og:description" content="Compositing Pipeline TD / Tools Engineer (Nuke + Python). Download resume PDF + quick highlights." />
+  <meta property="og:description" content="Pipeline TD / Nuke Tools Engineer resume (PDF) + highlights." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mauricio-gidi.github.io/resume/" />
-  <!-- Add later when you have an image -->
   <!-- <meta property="og:image" content="https://mauricio-gidi.github.io/assets/img/og-resume.png" /> -->
 
   <meta name="twitter:card" content="summary" />
@@ -33,7 +32,7 @@
         <div>
           <div style="font-weight:700;">Mauricio Gidi</div>
           <div style="font-size:13px;color:var(--muted);margin-top:-2px;">
-            Compositing Pipeline TD / Tools Engineer · Nuke + Python
+            Pipeline TD / Tools Engineer · Nuke + Python
           </div>
         </div>
       </div>
@@ -53,14 +52,21 @@
     <section class="hero">
       <h1>Resume</h1>
       <p>
-        Download the PDF resume, or preview it below. (If the link 404s, the PDF hasn’t been uploaded yet.)
+        Download the PDF resume (ATS-friendly). Preview below if your browser supports it.
       </p>
 
       <div class="btnrow">
-        <a class="btn primary" href="/resume/Mauricio-Gidi-Resume.pdf">Download Resume (PDF)</a>
-        <a class="btn" href="mailto:mgidi0098@gmail.com">Gmail</a>
+        <a class="btn primary" href="/resume/Mauricio-Gidi-Resume.pdf" download>Download PDF</a>
+        <a class="btn" href="mailto:mgidi0098@gmail.com">Email</a>
         <a class="btn" href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
         <a class="btn" href="https://github.com/mauricio-gidi">GitHub</a>
+      </div>
+
+      <div class="kickers" style="margin-top:14px;">
+        <span class="tag">Pipeline TD</span>
+        <span class="tag">Nuke Tools</span>
+        <span class="tag">Python</span>
+        <span class="tag">PySide2/6</span>
       </div>
     </section>
 
@@ -68,59 +74,42 @@
       <h2>Highlights</h2>
       <div class="grid">
         <article class="card">
-          <h3>Pipeline focus</h3>
-          <p style="margin:0;">
-            Pipeline automation · publishing/versioning · PySide UI tools · Nuke scripting &amp; deployment patterns.
+          <h3>Nuke + Python tooling</h3>
+          <p>
+            Built production-friendly tools with safety guardrails, clear docs, and deployment-aware structure
+            (NUKE_PATH patterns, predictable behavior, and small surface area for regressions).
           </p>
         </article>
-
         <article class="card">
-          <h3>Production mindset</h3>
-          <p style="margin:0;">
-            Artist support, workflow fixes under deadline pressure, and tools that stay stable in large scripts.
+          <h3>Artist support mindset</h3>
+          <p>
+            Compositor background: I design tools for real shot constraints (speed, clarity, minimal disruption),
+            and iterate based on artist feedback and troubleshooting data.
           </p>
         </article>
-
         <article class="card">
-          <h3>Tooling</h3>
-          <p style="margin:0;">
-            NukeX · ShotGrid · ACES/linear workflow · Python · PySide2 · Git/GitHub · Java.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Training</h3>
-          <p style="margin:0;">
-            Harvard Extension School (CS Master’s program, in progress) · VFS Compositing Diploma (Honours).
+          <h3>Engineering habits</h3>
+          <p>
+            Git discipline, readable architecture, compatibility shims (PySide2/PySide6), and validation mindset
+            (safe defaults + explicit failure modes).
           </p>
         </article>
       </div>
     </section>
 
     <section>
-      <h2>Preview</h2>
+      <h2>PDF Preview</h2>
 
-      <div
-        style="
-          margin-top:12px;
-          border:1px solid rgba(255,255,255,.10);
-          border-radius:16px;
-          overflow:hidden;
-          background: rgba(17,24,39,.55);
-        "
-      >
-        <object
-          data="/resume/Mauricio-Gidi-Resume.pdf"
-          type="application/pdf"
-          width="100%"
-          height="900"
-        >
-          <p style="padding:16px;margin:0;color:var(--muted);">
-            Your browser can’t display embedded PDFs.
-            <a href="/resume/Mauricio-Gidi-Resume.pdf">Download the PDF</a>.
-          </p>
-        </object>
-      </div>
+      <object data="/resume/Mauricio-Gidi-Resume.pdf" type="application/pdf" class="pdf-embed" aria-label="Resume PDF">
+        <p>
+          Your browser can’t preview PDFs.
+          <a href="/resume/Mauricio-Gidi-Resume.pdf">Download the PDF</a>.
+        </p>
+      </object>
+
+      <p style="margin-top:10px;color:var(--muted);font-size:14px;">
+        Tip: If the preview doesn’t load, use “Download PDF”.
+      </p>
     </section>
   </main>
 
@@ -129,7 +118,7 @@
     <div class="footer">
       <div>© <span id="y"></span> Mauricio Gidi</div>
       <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a href="mailto:mgidi0098@gmail.com">Gmail</a>
+        <a href="mailto:mgidi0098@gmail.com">mgidi0098@gmail.com</a>
         <a href="https://github.com/mauricio-gidi">GitHub</a>
         <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
       </div>
