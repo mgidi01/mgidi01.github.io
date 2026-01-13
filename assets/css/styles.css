@@ -84,6 +84,25 @@ p{ color:var(--muted); margin:10px 0; }
   border-color: rgba(110,231,255,.25);
 }
 
+/* Media blocks (project screenshots/GIFs) */
+.media{
+  margin:12px 0 0;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(17,24,39,.35);
+}
+.media img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+.media figcaption{
+  padding:8px 10px;
+  font-size:13px;
+  color:var(--muted);
+}
+
 .footer{
   margin-top:38px; padding-top:18px;
   border-top:1px solid rgba(255,255,255,.10);

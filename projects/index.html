@@ -5,25 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Projects | Mauricio Gidi</title>
-  <meta name="description" content="Case studies focused on production constraints: artist UX, reliability, maintainability, and pipeline integration (Nuke + Python)." />
+  <meta name="description" content="Nuke + Python pipeline tools with production constraints in mind: artist UX, reliability, maintainability, and deployment." />
   <meta name="author" content="Mauricio Gidi" />
   <meta name="theme-color" content="#0b0f14" />
 
   <link rel="canonical" href="https://mauricio-gidi.github.io/projects/" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
 
   <!-- Open Graph (social sharing) -->
   <meta property="og:title" content="Projects | Mauricio Gidi" />
   <meta property="og:description" content="Pipeline TD / Tools Engineer case studies: Nuke + Python tools focused on UX, reliability, and pipeline integration." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mauricio-gidi.github.io/projects/" />
-  <!-- Add later when you have an image -->
-  <!-- <meta property="og:image" content="https://mauricio-gidi.github.io/assets/img/og-projects.png" /> -->
+  <meta property="og:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Mauricio Gidi" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
 </head>
 
 <body>
@@ -55,9 +62,11 @@
     <section class="hero">
       <h1>Projects</h1>
       <p>
-        Case studies focused on production constraints: artist UX, reliability, maintainability,
-        and pipeline integration. Each project includes what problem it solves, how it works,
-        and what I’d improve next.
+        Production-minded tooling for compositing pipelines. I bias for safety, predictable behavior, and
+        clear UX under deadline pressure.
+      </p>
+      <p style="font-size:14px; margin-top:10px;">
+        <strong>Note:</strong> bullets marked <em>Estimate</em> are directional and depend on shot/script complexity.
       </p>
 
       <div class="kickers">
@@ -78,6 +87,14 @@
             and suitable for shared studio deployment.
           </p>
 
+          <figure class="media">
+            <img
+              src="/assets/img/projects/heavy-node-optimizer-demo.png"
+              alt="Nuke Heavy Node Optimizer: placeholder demo image. Replace with a real screenshot or GIF showing the UI and a before/after toggle."
+              loading="lazy" decoding="async" />
+            <figcaption>Replace this placeholder with your real demo GIF (UI + before/after).</figcaption>
+          </figure>
+
           <div class="kickers">
             <span class="tag">Nuke</span>
             <span class="tag">Python</span>
@@ -85,10 +102,11 @@
             <span class="tag">Status: Shipped</span>
           </div>
 
-          <ul style="margin:12px 0 0; padding-left:18px;">
-            <li>Turns N manual toggles into 1 action (per preview cycle).</li>
-            <li>Configurable “heavy” class list + presets (JSON-backed).</li>
-            <li>Cross-version UI compatibility via Qt shim (PySide2 + PySide6).</li>
+          <ul class="bullets">
+            <li><strong>Estimate:</strong> reduces preview-mode switching from ~20–60s of hunting/toggling nodes to ~1–2s (single action).</li>
+            <li><strong>Safety:</strong> toggles only the node <code>disable</code> knob (no rewiring, reversible).</li>
+            <li><strong>Config:</strong> JSON-backed presets (studio-friendly defaults + personal overrides).</li>
+            <li><strong>Compatibility:</strong> Qt shim to support the PySide2 → PySide6 era (Nuke 13–16+).</li>
           </ul>
 
           <div class="btnrow" style="margin-top:14px;">
@@ -108,6 +126,14 @@
             (skip malformed toolsets, deterministic sorting).
           </p>
 
+          <figure class="media">
+            <img
+              src="/assets/img/projects/nuke-toolsets-ui.png"
+              alt="Nuke Toolsets Library: placeholder UI image. Replace with a real screenshot showing toolset list, search/filter, and metadata."
+              loading="lazy" decoding="async" />
+            <figcaption>Replace this placeholder with a real UI screenshot (list + search + metadata).</figcaption>
+          </figure>
+
           <div class="kickers">
             <span class="tag">Nuke</span>
             <span class="tag">Python</span>
@@ -115,10 +141,11 @@
             <span class="tag">Status: In progress</span>
           </div>
 
-          <ul style="margin:12px 0 0; padding-left:18px;">
-            <li>Browse + filter toolsets with metadata (clean artist UX).</li>
-            <li>Safe loading strategy: handle malformed entries without breaking the UI.</li>
-            <li>Tracked roadmap and v0.1 scope in GitHub Issues/README.</li>
+          <ul class="bullets">
+            <li><strong>Estimate:</strong> reduces toolset insertion from ~30–90s of browsing to ~5–15s via search + metadata.</li>
+            <li><strong>Resilience:</strong> skips malformed toolsets without breaking the UI (clear errors, keeps browsing).</li>
+            <li><strong>Deployment:</strong> designed for shared deployment (NUKE_PATH patterns; shared + personal roots).</li>
+            <li><strong>Tracking:</strong> roadmap + v0.1 scope are maintained in GitHub Issues/README.</li>
           </ul>
 
           <div class="btnrow" style="margin-top:14px;">
@@ -128,7 +155,7 @@
           </div>
         </article>
 
-        <!-- OPTIONAL / NON-VFX PROJECT (HIDDEN UNTIL READY) -->
+        <!-- OPTIONAL / NON-VFX PROJECT -->
         <article class="card" id="sorting-hat">
           <h3>Java Swing App — Sorting Hat Quiz (Optional)</h3>
           <p>
@@ -136,31 +163,37 @@
             I keep this as a secondary project so it doesn’t compete with my Nuke tooling work.
           </p>
 
+          <figure class="media">
+            <img
+              src="/assets/img/projects/sorting-hat-ui.png"
+              alt="Sorting Hat app: placeholder screenshot. Replace with a real screenshot of the main UI." loading="lazy" decoding="async" />
+            <figcaption>Optional: replace with a real screenshot if you keep this project listed.</figcaption>
+          </figure>
+
           <div class="kickers">
             <span class="tag">Java</span>
             <span class="tag">Swing</span>
             <span class="tag">Status: Optional</span>
           </div>
 
-          <!-- Intentionally no buttons until a public repo/case study exists. -->
+          <ul class="bullets">
+            <li><strong>Engineering:</strong> structured UI (separation of concerns; data-driven scoring).</li>
+            <li><strong>Focus:</strong> kept secondary so Nuke tooling remains the headline.</li>
+          </ul>
         </article>
       </div>
     </section>
 
     <section>
-      <h2>Case study format</h2>
+      <h2>How to read these projects</h2>
       <div class="grid">
         <article class="card">
-          <h3>What you’ll see</h3>
-          <p style="margin:0;">
-            Problem → Constraints → Design decisions → Implementation → Results → Next iteration
-          </p>
+          <h3>What matters in production</h3>
+          <p style="margin:0;">Safety, predictable behavior, clear failure modes, and tooling that doesn’t surprise artists.</p>
         </article>
         <article class="card">
-          <h3>Why it matters</h3>
-          <p style="margin:0;">
-            Hiring managers can quickly evaluate pipeline thinking, reliability, and maintainability.
-          </p>
+          <h3>What I optimize for</h3>
+          <p style="margin:0;">Less clicking, faster iteration loops, and clean deployment stories (docs + defaults).</p>
         </article>
       </div>
     </section>

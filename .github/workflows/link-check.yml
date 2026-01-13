@@ -1,0 +1,37 @@
+name: Link check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1' # Mondays 09:00 UTC
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check links in HTML
+        uses: lycheeverse/lychee-action@v1.10.0
+        with:
+          #
+          # Notes:
+          # - LinkedIn blocks bot user agents (often returns 999/403), so we exclude it.
+          # - mailto: links aren't HTTP, exclude those.
+          # - Accept 429 (rate limit) so GitHub links don't fail intermittently.
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,206,429
+            --max-concurrency 4
+            --max-retries 2
+            --timeout 20
+            --exclude-mail
+            --exclude '(?i)^https?://(www\.)?linkedin\.com/.*'
+            './**/*.html'
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
