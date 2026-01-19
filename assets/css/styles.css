@@ -204,3 +204,24 @@ code{
   h1{ font-size:30px; }
   .card{ grid-column: span 12; }
 }
+
+
+/* Small meta lines (tested versions, MVP status) */
+.meta-line{
+  margin:10px 0 0;
+  font-size:13px;
+  color:var(--muted);
+}
+
+details.card summary{
+  cursor:pointer;
+  font-weight:700;
+  list-style:none;
+}
+details.card summary::-webkit-details-marker{ display:none; }
+details.card summary:after{
+  content:"▾";
+  float:right;
+  color:var(--muted);
+}
+details.card[open] summary:after{ content:"▴"; }

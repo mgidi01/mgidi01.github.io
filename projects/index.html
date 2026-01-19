@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Projects | Mauricio Gidi</title>
-  <meta name="description" content="Case studies focused on production constraints: artist UX, reliability, maintainability, and pipeline integration (Nuke + Python)." />
+  <meta name="description" content="Two Nuke tools built for production constraints: artist UX, reliability, safe behavior boundaries, and maintainable deployment (Nuke + Python)." />
   <meta name="author" content="Mauricio Gidi" />
   <meta name="theme-color" content="#0b0f14" />
 
@@ -29,16 +29,19 @@
   <meta name="twitter:image" content="https://mauricio-gidi.github.io/assets/img/og/og-card.png" />
 
 
-  <!-- Open Graph (social sharing) -->
+    <meta name="twitter:title" content="Projects | Mauricio Gidi" />
+  <meta name="twitter:description" content="Nuke + Python case studies focused on artist UX, reliability, and deployment-aware pipeline tooling." />
+<!-- Open Graph (social sharing) -->
   <meta property="og:title" content="Projects | Mauricio Gidi" />
-  <meta property="og:description" content="Pipeline TD / Tools Engineer case studies: Nuke + Python tools focused on UX, reliability, and pipeline integration." />
+  <meta property="og:description" content="Two Nuke tools built for production constraints: artist UX, reliability, safe behavior boundaries, and maintainable deployment (Nuke + Python)." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mauricio-gidi.github.io/projects/" />
   <!-- Twitter -->
 </head>
 
 <body>
-  <!-- NAV -->
+  <a class="skip-link" href="#main">Skip to content</a>
+<!-- NAV -->
   <header class="container">
     <nav class="nav" aria-label="Primary">
       <div class="brand">
@@ -46,7 +49,7 @@
         <div>
           <div style="font-weight:700;">Mauricio Gidi</div>
           <div style="font-size:13px;color:var(--muted);margin-top:-2px;">
-            Pipeline TD / Tools Engineer · Nuke + Python
+            Nuke Tools Engineer / Pipeline TD · Nuke + Python
           </div>
         </div>
       </div>
@@ -62,13 +65,12 @@
   </header>
 
   <!-- CONTENT -->
-  <main class="container">
+  <main id="main" class="container">
     <section class="hero">
       <h1>Projects</h1>
       <p>
-        Case studies focused on production constraints: artist UX, reliability, maintainability,
-        and pipeline integration. Each project includes what problem it solves, how it works,
-        and what I’d improve next.
+        Two Nuke tools built for production constraints: artist UX, reliability, safe behavior boundaries,
+        and maintainable deployment. Each includes Problem → Solution → Outcome plus the next hardening pass.
       </p>
 
       <div class="kickers">
@@ -88,6 +90,13 @@
             Safe by design (only touches each node’s <code>disable</code> knob), configurable via presets,
             and suitable for shared studio deployment.
           </p>
+
+          <figure class="media">
+            <img src="/assets/img/projects/heavy-node-optimizer-demo.png" alt="Screenshot of the Nuke Heavy Node Optimizer UI" loading="lazy" />
+            <figcaption>Tool #1 — shipped: single-action heavy-node toggling + presets.</figcaption>
+          </figure>
+
+          <p class="meta-line">Tested: Nuke 15 (Windows). Designed for PySide2/6 compatibility.</p>
 
           <div class="pso" aria-label="Problem Solution Outcome">
             <div class="pso-row">
@@ -134,6 +143,30 @@
             (skip malformed toolsets, deterministic sorting).
           </p>
 
+          <div class="pso" aria-label="Problem Solution Outcome">
+            <div class="pso-row">
+              <span class="pso-label">Problem</span>
+              <span class="pso-text">Studios accumulate useful toolsets, but artists lose time searching, duplicating, or using inconsistent versions.</span>
+            </div>
+            <div class="pso-row">
+              <span class="pso-label">Solution</span>
+              <span class="pso-text">A deployable library UI to browse, filter, and insert standardized toolsets from shared + personal roots.</span>
+            </div>
+            <div class="pso-row">
+              <span class="pso-label">Outcome</span>
+              <span class="pso-text">Faster setup, fewer “which version?” mistakes, and a clearer path to studio-wide consistency.</span>
+            </div>
+          </div>
+
+          <p class="meta-line">Current focus: reliability hardening (clear errors, deterministic sorting, refresh workflow).</p>
+
+          <figure class="media">
+            <img src="/assets/img/projects/nuke-toolsets-ui.png" alt="Screenshot of the Nuke Toolsets Library UI" loading="lazy" />
+            <figcaption>Tool #2 — in progress: toolsets browser + insertion workflow.</figcaption>
+          </figure>
+
+          <p class="meta-line">Tested: Nuke 15 (Windows). Designed for PySide2/6 compatibility.</p>
+
           <div class="kickers">
             <span class="tag">Nuke</span>
             <span class="tag">Python</span>
@@ -153,24 +186,23 @@
             <a class="btn" href="https://github.com/mauricio-gidi/nuke-toolsets#v01-scope--milestone-plan">v0.1 Scope</a>
           </div>
         </article>
-
-        <!-- OPTIONAL / NON-VFX PROJECT (HIDDEN UNTIL READY) -->
-        <article class="card" id="sorting-hat">
-          <h3>Java Swing App — Sorting Hat Quiz (Optional)</h3>
-          <p>
-            Desktop UI app built with a maintainable structure (MVC-style separation) and data-driven scoring.
-            I keep this as a secondary project so it doesn’t compete with my Nuke tooling work.
-          </p>
-
-          <div class="kickers">
-            <span class="tag">Java</span>
-            <span class="tag">Swing</span>
-            <span class="tag">Status: Optional</span>
-          </div>
-
-          <!-- Intentionally no buttons until a public repo/case study exists. -->
-        </article>
       </div>
+    </section>
+
+
+    <section>
+      <h2>Other (secondary)</h2>
+      <details class="card">
+        <summary>Java Swing — Sorting Hat Quiz</summary>
+        <p>
+          Desktop UI app built with a maintainable structure (MVC-style separation) and data-driven scoring.
+          Kept secondary so it doesn’t compete with my Nuke tooling work.
+        </p>
+        <figure class="media">
+          <img src="/assets/img/projects/sorting-hat-ui.png" alt="Screenshot of the Sorting Hat Java Swing UI" loading="lazy" />
+          <figcaption>Secondary project — UI architecture + data-driven scoring.</figcaption>
+        </figure>
+      </details>
     </section>
 
     <section>
