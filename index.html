@@ -97,7 +97,9 @@
         <article class="card">
           <h3>Nuke Heavy Node Optimizer (Shipped)</h3>
           <p>
-            When a comp gets heavy (Kronos, OFlow, Denoise…), I don’t want to toggle nodes one by one just to preview. This gives me one hotkey to flip a configurable set of node classes. It only touches each node’s <code>disable</code> knob, so it stays predictable.
+            When a comp gets heavy (denoise/defocus/retime/motion blur, etc.), I lose time repeatedly disabling/enabling nodes just to iterate.
+            
+            This Optimizer bulk-toggles a configurable list of heavy node classes across the script (it only touches the disable knob) + a tiny editor UI for the class list.          
           </p>
 
                     <figure class="media">
@@ -115,9 +117,8 @@
           </div>
 
           <ul style="margin:12px 0 0; padding-left:18px; color:var(--muted);">
-            <li>One hotkey: working ↔ final (for the classes you choose).</li>
-            <li>Presets saved to JSON (easy to share in a studio).</li>
-            <li>UI works across PySide2/PySide6.</li>
+            <li>Ctrl+Alt+O to toggle your “heavy” node types</li>
+            <li>Edit the class list in a small UI</li>
           </ul>
 
           <div class="btnrow">
