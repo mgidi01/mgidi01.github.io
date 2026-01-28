@@ -69,8 +69,7 @@
     <section class="hero">
       <h1>Projects</h1>
       <p>
-        Two Nuke tools built for production constraints: artist UX, reliability, safe behavior boundaries,
-        and maintainable deployment. Each includes Problem → Solution → Outcome plus the next hardening pass.
+        These are tools I built because I ran into the same pain points in Nuke over and over. Each project has a short “why”, what it does, and the boring details that matter (safety, installs, edge cases).
       </p>
 
       <div class="kickers">
@@ -86,9 +85,7 @@
         <article class="card" id="heavy-node-optimizer">
           <h3>Nuke Heavy Node Optimizer (Shipped)</h3>
           <p>
-            One action to toggle “heavy” node classes across a script for faster iteration.
-            Safe by design (only touches each node’s <code>disable</code> knob), configurable via presets,
-            and suitable for shared studio deployment.
+            When a script gets heavy, previewing shouldn’t mean 30 manual disables. This tool toggles a configurable set of node classes in one action. It only touches <code>disable</code>, so the behavior is easy to trust and undo.
           </p>
 
           <figure class="media">
@@ -96,7 +93,7 @@
             <figcaption>Tool #1 — shipped: single-action heavy-node toggling + presets.</figcaption>
           </figure>
 
-          <p class="meta-line">Tested: Nuke 15 (Windows). Designed for PySide2/6 compatibility.</p>
+          <p class="meta-line">Tested: Windows — Nuke 13 / 15 / 16. PySide2 &amp; PySide6.</p>
 
           <div class="pso" aria-label="Problem Solution Outcome">
             <div class="pso-row">
@@ -127,10 +124,10 @@
           </ul>
 
           <div class="btnrow" style="margin-top:14px;">
-            <a class="btn primary" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer#demo">Demo</a>
-            <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer/blob/main/docs/case-study-heavy-node-optimizer.md">Case Study</a>
-            <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer">GitHub</a>
-            <a class="btn" href="https://github.com/mauricio-gidi/nuke-heavy-node-optimizer/issues">Backlog</a>
+            <a class="btn primary" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer#demo">Demo</a>
+            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer/blob/main/docs/case-study-heavy-node-optimizer.md">Case Study</a>
+            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer">GitHub</a>
+            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-heavy-node-optimizer/issues">Backlog</a>
           </div>
         </article>
 
@@ -138,9 +135,7 @@
         <article class="card" id="nuke-toolsets">
           <h3>Nuke Toolsets Library (In progress)</h3>
           <p>
-            A studio-deployable toolsets browser + insertion workflow for standardized node setups
-            (shared + personal roots). Designed for NUKE_PATH deployment and reliability hardening
-            (skip malformed toolsets, deterministic sorting).
+            A toolsets browser for Nuke: search, filter, and insert toolsets without digging through folders. It supports shared and personal libraries and aims to be safe in a studio environment (clear warnings instead of silent failures).
           </p>
 
           <div class="pso" aria-label="Problem Solution Outcome">
@@ -158,7 +153,7 @@
             </div>
           </div>
 
-          <p class="meta-line">Current focus: reliability hardening (clear errors, deterministic sorting, refresh workflow).</p>
+          <p class="meta-line">Tested: Nuke 15 (Windows) so far. PySide2 &amp; PySide6.</p>
 
           <figure class="media">
             <img src="/assets/img/projects/nuke-toolsets-ui.png" alt="Screenshot of the Nuke Toolsets Library UI" loading="lazy" />
@@ -181,9 +176,9 @@
           </ul>
 
           <div class="btnrow" style="margin-top:14px;">
-            <a class="btn primary" href="https://github.com/mauricio-gidi/nuke-toolsets">GitHub</a>
-            <a class="btn" href="https://github.com/mauricio-gidi/nuke-toolsets/issues">Issues</a>
-            <a class="btn" href="https://github.com/mauricio-gidi/nuke-toolsets#v01-scope--milestone-plan">v0.1 Scope</a>
+            <a class="btn primary" href="https://github.com/Mauricio-Gidi/nuke-toolsets">GitHub</a>
+            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-toolsets/issues">Issues</a>
+            <a class="btn" href="https://github.com/Mauricio-Gidi/nuke-toolsets#v01-scope--milestone-plan">v0.1 Scope</a>
           </div>
         </article>
       </div>
@@ -230,7 +225,7 @@
       <div>© <span id="y"></span> Mauricio Gidi</div>
       <div style="display:flex;gap:12px;flex-wrap:wrap;">
         <a href="mailto:mgidi0098@gmail.com">mgidi0098@gmail.com</a>
-        <a href="https://github.com/mauricio-gidi">GitHub</a>
+        <a href="https://github.com/Mauricio-Gidi">GitHub</a>
         <a href="https://www.linkedin.com/in/mauricio-gidi-29689b22a/">LinkedIn</a>
       </div>
     </div>
